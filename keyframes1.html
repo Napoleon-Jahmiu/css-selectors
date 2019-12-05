@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Keyframes</title>
+    <style>
+        body {
+            background: #333;
+        }
+        h2 {
+            font-size: 2rem;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+        }
+
+        .box {
+            background: white;
+            width: 200px;
+            height: 200px;
+            position: relative;
+            
+            /* animation-name: Napoleon;
+            animation-delay: 1ms;
+            animation-duration: 10s;
+            animation-iteration-count: 1;
+            animation-direction: alternate;
+            animation-fill-mode: forwards;
+            animation-timing-function: ease-in-out;
+            animation-play-state: running; */
+            /*  All the transitions property property was grouped together */
+            animation: Napoleon 10s 2s 3 alternate forwards ease-in-out;
+        }
+
+        /* Notes: The Array of animation functions or else it wont take effect
+        animation-name
+        animation-duration
+        animation-delay
+        animation-iteration-count
+        animation-direction
+        animation-fill-mode
+        animation-timing-function*/
+
+        @keyframes Napoleon {
+            from {
+                top: 0;
+            }
+
+            to {
+                width: 600px;
+                background: green;
+                top: 200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"><h2>Keyframes</h2></div>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Transition 1</title>
+    <style>
+        body {
+            background: #333;
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            text-align: center;
+            height: 100vh;
+        }
+        
+        .box {
+            background: white;
+            width: 200px;
+            height: 200px;
+            /* transition can be grouped together just like it's done in the last line below */
+            /* transition-property: background, border-radius;
+            transition-delay: 1s;
+            transition-duration: 3s;
+            transition-timing-function: ease-in-out; */
+            transition: all 3s ease-in-out;
+
+            /* TRANSITIONAL PROPERTIES
+            -Properties that have an identifiable halfway point
+            
+            background-color
+            background-position
+            border-color
+            border-width
+            border-spacing
+            bottom
+            color
+            font-size
+            font-weight
+            height-left
+            letter-spacing
+            line-height
+            margin
+            max-height
+            max-width
+            min-height
+            min-width
+            opacity
+            outline-color
+            outline-offset
+            outline-width
+            padding right
+            text-indent
+            text-shadow
+            top
+            vertical-align
+            visibility
+            width
+            word-spacing
+            z-index */
+        }
+
+        .box:hover{
+            background: blue;
+            border-radius: 50%;
+            background-position: top;
+            border: yellow 4px solid;
+            opacity: 0.2;
+            visibility: hidden;
+            width: 400px;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box"></div>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS</title>
+
+    <style>
+        :root {
+            /* --max-width:1100px; */
+            --primarybg: black;
+            --secondarybg: green;
+            --lightcolor: #fff;
+            --box-1-width: 1;
+            --box-2-width: 3;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f4f4;
+        }
+
+         #header {
+            color: #fff;
+            background: var(--primarybg);
+            text-align: center;
+            border-bottom: 5px solid var(--secondarybg);
+        }
+
+        .container {
+            display: flex;
+            width: var(--max-width);
+            flex-wrap: wrap;
+        }
+
+        .box {
+            margin: 1rem;
+            padding: 1rem;
+            color: #fff;
+            background: var(--primarybg);
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box-1 {flex: var(--box-1-width);}
+        .box-2 {flex: var(--box-2-width);}
+
+        
+    </style>
+</head>
+
+<body>
+    <div id="header">
+    <h1>CSS VARIABLE</h1>
+    </div>
+    <div class="container">
+        <div class="box box-1">
+            <h1>Heading</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing
+               elit. Fuga commodi ipsam aut illo maiores quis totam 
+               adipisci molestias, atque laboriosam?</p>
+        </div>
+
+        <div class="box box-2">
+            <h1>Heading</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing
+               elit. Fuga commodi ipsam aut illo maiores quis totam 
+               adipisci molestias, atque laboriosam?</p>
+        </div>
+    </div>
+</body>
+</html>

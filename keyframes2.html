@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Keyframes 2</title>
+    
+    <style>
+        body {
+            background: #333;
+        }
+
+        .green {
+            background: darkgrey;
+            width: 200px;
+            height: 200px;
+            top: 0;
+            left: 0;
+            position: relative;
+            /* the keyframes property of animations was grouped together */
+            animation: napoleon 5s 3 forwards ease-in-out;
+        }
+
+        @keyframes napoleon {
+            25% {
+                top: 0;
+                left: 300px;
+                background: blueviolet;
+                border-radius: 39% 0 0 0;
+            }
+
+            45% {
+                top: 300px;
+                left: 300px;
+                background: burlywood;
+                border-radius: 50% 39% 0 0;
+            }
+
+            80% {
+                top: 300px;
+                left: 0;
+                background: crimson;
+                border-radius: 50% 55% 39% 0;
+            }
+
+            100% {
+                top: 0;
+                left: 0;
+                background: darkgoldenrod;
+                border-radius: 50% 50% 29% 50%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="green"></div>
+    
+</body>
+</html>

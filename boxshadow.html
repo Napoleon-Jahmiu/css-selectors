@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Box Shadow</title>
+
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .box {
+            padding: 1rem;
+            margin: 1rem;
+            color: #fff;
+            background: coral;
+
+        /* offset-x | offset-y | color */
+            box-shadow: 10px 5px teal;
+        
+        /* offset-x | offset-y | blur-radius | color */
+            box-shadow: 10px 10px 5px teal;
+
+        /*Negative: offset-x | offset-y | blur-radius | color */
+            box-shadow: -10px -10px 5px teal;
+        
+        /* offset-x | offset-y | blur-radius | spread-radius | color */
+            box-shadow: -10px -10px 10px 1px teal;
+
+        /*inset offset-x | offset-y | blur-radius | color */
+            box-shadow: inset 10px 5px teal;
+
+        /*Multiple Shadows */
+            box-shadow: -10px -10px 5px teal, 10px 10px 5px red;
+        }        
+    </style>
+</head>
+<body>
+
+<div class="container">
+<div class="box">
+    <h1>Heading</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing 
+       elit. Eos voluptatum distinctio possimus neque, 
+       voluptatibus molestiae suscipit ex odit nobis amet?</p>
+</div>
+
+<div class="box">
+    <h1>Heading</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing 
+       elit. Eos voluptatum distinctio possimus neque, 
+       voluptatibus molestiae suscipit ex odit nobis amet?</p>
+</div>
+
+<div class="box">
+    <h1>Heading</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing 
+       elit. Eos voluptatum distinctio possimus neque, 
+       voluptatibus molestiae suscipit ex odit nobis amet?</p>
+</div>
+</div>
+
+</body>
+</html>

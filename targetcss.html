@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Targeted Selectors</title>
+
+    <style>
+        /* Direct Parent */
+    div > p {
+        background: #ddd;
+    }
+    /* Directly After */
+    div + p {
+        background: #555;
+        color: #ddd;
+    }
+    /* By Attributes */
+    a[target] {
+        color: #fff;
+        background: #f43d53;
+    }
+
+    /* Specific Attribute b */
+     input {
+       width: 100%; 
+       margin-bottom: 20px;
+       padding-top: 5px;
+    }
+    </style>
+</head>
+<body>
+<div>
+    <p>Lorem ipsum dolor sit amet</p>
+    <ul>
+        <li>One</li>
+        <li><p>Two for Four Forum is a Ponzi Scheme</p></li>
+        <li>Three</li>
+    </ul>
+    
+    <p>Lorem ipsum dolor sit amet.</p>
+</div>
+
+<p>Lorem ipsum dolor sit amet.</p>
+
+<a href="#">Home</a> <a href="#" target="_blank">about</a> <a href="https://google.com" target="_self">Google</a>
+
+<form>
+    <input type="text" placeholder="Name">
+    <input type="email" placeholder="Email">
+    <input type="submit" value="Submit">
+</form>
+</body>
+
+</html>

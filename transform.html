@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Transform</title>
+    <style>
+        body {
+            background: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .box {
+            background: #fff;
+            width: 200px;
+            height: 200px;
+            /* transform: rotate(60deg);
+            transform: rotate3d(180deg 30deg 45deg); */
+            /* transform: skew(30deg);
+            transform: scale(2); */
+            transition: all 5s ease-in-out;
+        }
+
+        .box:hover {
+            background: blue;
+            border-radius: 30%;
+            border-color: 10px solid yellow;
+            outline-color:10px dotted teal;
+            /* transform property with the rotate, skew and scale functions */
+            /* transform: skew(30deg);
+            transform: rotate(180deg);
+            transform: scale(1.5); */
+            /* transform: rotateX(150deg);
+            transform: rotateY(180deg); */
+           
+           /* This is the transform property which include the translate functions */
+            /* transform: translateX(-120px);
+            transform: translateY(-200px);
+            transform: translate(-180px, -200px); */
+            transform: translate3d(180px,-200px,-270px);
+            opacity: 0.6;
+            /* visibility: hidden; */
+        }        
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    
+</body>
+</html>
